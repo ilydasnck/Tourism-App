@@ -2,10 +2,11 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {BookNowButton, Detail, Mountain} from '../../components';
 
-const AndesMountain = ({navigation}) => {
+const AndesMountain = ({navigation, route}) => {
+  console.log('route', route);
   return (
     <View>
-      <Mountain navigation={navigation} />
+      <Mountain productName={route.params.id} navigation={navigation} />
       <Detail />
       <View style={styles.container}>
         <Text>

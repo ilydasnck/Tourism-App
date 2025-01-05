@@ -38,7 +38,7 @@ const TabNavigator = () => {
       />
       <Tab.Screen
         name={RoutesNames.SAYFA2}
-        component={Andesmountain}
+        component={Sayfa1}
         options={{
           tabBarIcon: ({focused}) => (
             <Image

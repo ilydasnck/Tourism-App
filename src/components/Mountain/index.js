@@ -11,7 +11,7 @@ import images from '../../assets/images';
 import icons from '../../assets/icons';
 import {RoutesNames} from '../../config';
 
-const Mountain = ({navigation}) => {
+const Mountain = ({navigation, productName}) => {
   return (
     <View style={{alignItems: 'center'}}>
       <View style={{alignItems: 'center'}}>
@@ -57,7 +57,7 @@ const Mountain = ({navigation}) => {
           <View style={styles.description}>
             <View>
               <View>
-                <Text style={styles.andesText}>Andes Mountain</Text>
+                <Text style={styles.andesText}>{productName}</Text>
               </View>
               <View style={{marginTop: 10, flexDirection: 'row'}}>
                 <View>

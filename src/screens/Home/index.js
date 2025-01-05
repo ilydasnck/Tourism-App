@@ -10,9 +10,27 @@ const home = ({navigation}) => {
       <SearchPlace />
       <Filter />
       <ScrollView horizontal>
-        <Category navigation={navigation} />
-        <Category navigation={navigation} />
-        <Category navigation={navigation} />
+        <Category
+          navigation={() => {
+            navigation.navigate(RoutesNames.ANDESMOUNTAIN, {
+              id: '12',
+            });
+          }}
+        />
+        <Category
+          navigation={() => {
+            navigation.navigate(RoutesNames.ANDESMOUNTAIN, {
+              id: '22',
+            });
+          }}
+        />
+        <Category
+          navigation={() => {
+            navigation.navigate(RoutesNames.ANDESMOUNTAIN, {
+              id: '321',
+            });
+          }}
+        />
       </ScrollView>
     </View>
   );

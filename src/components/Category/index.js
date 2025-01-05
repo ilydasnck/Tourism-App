@@ -15,10 +15,7 @@ const Category = ({navigation}) => {
           backgroundColor: 'white',
           marginLeft: 20,
         }}>
-        <TouchableOpacity
-          onPress={() => {
-            navigation.navigate(RoutesNames.ANDESMOUNTAIN);
-          }}>
+        <TouchableOpacity onPress={navigation}>
           <Image source={Images.fuji} style={styles.box} />
           <View
             style={{
